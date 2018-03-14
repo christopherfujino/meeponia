@@ -1,0 +1,102 @@
+{
+  "name": "meeponia",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "jquery": "^3.3.1",
+    "popper": "^1.0.1",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint": "eslint **/*.js*"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint": "^4.18.2",
+    "eslint-plugin-react": "^7.7.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "impliedStrict": true,
+        "jsx": true
+      },
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "amd": true,
+      "browser": true,
+      "es6": true,
+      "jquery": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:all",
+      "plugin:react/all"
+    ],
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "arrow-parens": [
+        "warn",
+        "as-needed"
+      ],
+      "capitalized-comments": "off",
+      "class-methods-use-this": [
+        "warn",
+        {
+          "exceptMethods": [
+            "render"
+          ]
+        }
+      ],
+      "id-length": "off",
+      "indent": [
+        "error",
+        2
+      ],
+      "no-extra-parens": "off",
+      "no-inline-comments": "off",
+      "no-magic-numbers": "off",
+      "no-ternary": "off",
+      "padded-blocks": "off",
+      "react/forbid-component-props": "warn",
+      "react/forbid-prop-types": "off",
+      "react/jsx-indent": [
+        "error",
+        2
+      ],
+      "react/jsx-indent-props": [
+        "error",
+        2
+      ],
+      "react/jsx-max-depth": [
+        "warn",
+        {
+          "max": 3
+        }
+      ],
+      "react/prefer-stateless-function": "warn",
+      "react/prop-types": "warn",
+      "react/require-optimization": "warn"
+    }
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "version": "16.0"
+    }
+  }
+}
