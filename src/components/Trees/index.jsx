@@ -2,9 +2,9 @@
 import Nav from "../Nav";
 import React from "react";
 import {Route} from "react-router-dom";
-import Story from "../../lib/trees/techTree.json";
+import Story from "../../lib/trees/story";
 import Tech from "../../lib/trees/techTree.json";
-import Tree from "../Tree";
+import Tree from "./Tree";
 
 class Trees extends React.PureComponent {
   static jsonMap = {

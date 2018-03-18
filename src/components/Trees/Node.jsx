@@ -8,12 +8,9 @@ const Node = ({name, children}) => {
       </p>
       {
         (children.length > 0) && (
-          <ul className="">
+          <ul>
             { children.map(node => (
-              <li
-                className=""
-                key={`treeNodeListElement${node.name}`}
-              >
+              <li key={`treeNodeListElement${node.name}`}>
                 {node}
               </li>
             )) }
