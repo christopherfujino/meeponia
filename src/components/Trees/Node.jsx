@@ -1,16 +1,23 @@
 import React from "react";
 
-const Node = ({name, children}) => {
+const Node = ({name, bodyText, children}) => {
   return (
     <div>
-      <p>
+      <h3>
         { name }
-      </p>
+      </h3>
+      { bodyText && bodyText.length > 0 &&
+          bodyText.map(paragraph => (
+            <p key={`bodyTextP${name}`}>
+              {paragraph}
+            </p>
+          ))
+      }
       {
         (children.length > 0) && (
           <ul>
             { children.map(node => (
-              <li key={`treeNodeListElement${node.name}`}>
+              <li>
                 {node}
               </li>
             )) }

@@ -2,7 +2,8 @@ import Node from "./Node";
 import React from "react";
 
 const buildTree = tree => (
-    <Node
+  <Node
+      bodyText={tree.bodyText}
       key={`treeNode${tree.name}`}
       name={tree.name}
     >

@@ -1,4 +1,4 @@
-{
+export default {
   "name": "root",
   "children": [
     {
@@ -33,4 +33,4 @@
       ]
     }
   ]
-}
+};

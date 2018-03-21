@@ -2,22 +2,16 @@
 import Nav from "../Nav";
 import React from "react";
 import {Route} from "react-router-dom";
-import Story from "../../lib/trees/story";
-import Tech from "../../lib/trees/techTree.json";
+import trees from "../../lib/trees";
 import Tree from "./Tree";
 
 class Trees extends React.PureComponent {
-  static jsonMap = {
-    "story": Story,
-    "tech": Tech
-  };
-
-  static routeMap = Object.keys(Trees.jsonMap).map(treeName => ({
+  static routeMap = Object.keys(trees).map(treeName => ({
     "path": `/trees/${treeName}`,
-    "render": (name => <Tree tree={Trees.jsonMap[name]} />).bind(null, treeName)
+    "render": (name => <Tree tree={trees[name]} />).bind(null, treeName)
   }));
 
-  static navMap = Object.keys(Trees.jsonMap).map(treeName => ({
+  static navMap = Object.keys(trees).map(treeName => ({
     "text": treeName,
     "to": `/trees/${treeName}`
   }))

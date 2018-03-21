@@ -7,7 +7,7 @@ import navMap from "./lib/navigationMaps/root.js";
 class App extends Component {
   static renderNav () {
     return (
-      <Nav map={navMap}/>
+      <Nav map={navMap} />
     );
   }
 
