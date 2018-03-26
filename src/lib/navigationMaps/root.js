@@ -4,6 +4,10 @@ export default [
     "to": "/"
   },
   {
+    "text": "Game",
+    "to": "/play"
+  },
+  {
     "text": "Trees",
     "to": "/trees"
   },
