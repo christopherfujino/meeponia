@@ -67,6 +67,8 @@
         "error",
         2
       ],
+      "line-comment-position": "off",
+      "max-len": "warn",
       "no-extra-parens": "off",
       "no-inline-comments": "off",
       "no-magic-numbers": "off",
@@ -90,7 +92,8 @@
       ],
       "react/prefer-stateless-function": "warn",
       "react/prop-types": "warn",
-      "react/require-optimization": "warn"
+      "react/require-optimization": "warn",
+      "require-jsdoc": "off"
     }
   },
   "settings": {

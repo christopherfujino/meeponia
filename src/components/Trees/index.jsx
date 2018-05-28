@@ -2,13 +2,13 @@
 import Nav from "../Nav";
 import React from "react";
 import {Route} from "react-router-dom";
-import trees from "../../lib/trees";
 import Tree from "./Tree";
+import trees from "../../lib/trees";
 
 class Trees extends React.PureComponent {
   static routeMap = Object.keys(trees).map(treeName => ({
     "path": `/trees/${treeName}`,
-    "render": (name => <Tree tree={trees[name]} />).bind(null, treeName)
+    "render": (name => <Tree tree={trees[name]({})} />).bind(null, treeName)
   }));
 
   static navMap = Object.keys(trees).map(treeName => ({
